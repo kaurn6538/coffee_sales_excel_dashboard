@@ -12,6 +12,7 @@ This Excel dashboard provides a comprehensive analysis of coffee sales data, fea
 
 ## Data Preparation
 Orders Sheet
+
 Coffee Name: Derived using the formula:
   *     =IF(I2="Rob","Robusta",IF(I2="Exc","Excelsa",IF(I2="Ara","Arabica",IF(I2="Lib","Liberica",""))))
 
