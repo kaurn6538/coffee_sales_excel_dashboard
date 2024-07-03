@@ -6,21 +6,21 @@ This Excel dashboard provides a comprehensive analysis of coffee sales data, fea
 2. Top 5 Customers Chart: Highlights the top 5 customers based on sales.
 3. Line Chart of Total Sales: Shows the trend of total sales over time.
 4. Filters:
-*    Timeline Filter: Allows filtering of data by specific time periods.
-*    Roast Type Filter: Filters data based on the type of coffee roast (Medium, Light, Dark).
-*    Loyalty Card Filter: Filters data based on whether customers have a loyalty card.
+  *    Timeline Filter: Allows filtering of data by specific time periods.
+  *    Roast Type Filter: Filters data based on the type of coffee roast (Medium, Light, Dark).
+  *    Loyalty Card Filter: Filters data based on whether customers have a loyalty card.
 
 ## Data Preparation
 Orders Sheet
-*    Coffee Name: Derived using the formula:
-*     =IF(I2="Rob","Robusta",IF(I2="Exc","Excelsa",IF(I2="Ara","Arabica",IF(I2="Lib","Liberica",""))))
+Coffee Name: Derived using the formula:
+  *     =IF(I2="Rob","Robusta",IF(I2="Exc","Excelsa",IF(I2="Ara","Arabica",IF(I2="Lib","Liberica",""))))
 
-*    Roast Type Name: Derived using the formula:
-*     =IF(J2="M","Medium",IF(J2="L","Light",IF(J2="D","Dark","")))
+Roast Type Name: Derived using the formula:
+  *     =IF(J2="M","Medium",IF(J2="L","Light",IF(J2="D","Dark","")))
 
 Customer Sheet
-*    Loyalty Card: Created using the formula:
-*     =XLOOKUP([@[Customer ID]],customers!$A$1:$A$1001,customers!$I$1:$I$1001,,0)
+Loyalty Card: Created using the formula:
+  *     =XLOOKUP([@[Customer ID]],customers!$A$1:$A$1001,customers!$I$1:$I$1001,,0)
 
 ## Charts and Pivot Tables
 1. Bar Chart by Country: Created using a pivot table to display the sales distribution by country.
@@ -34,6 +34,7 @@ Customer Sheet
 
 ## Installation
 Download the Excel file from this repository.
+
 Open the file in Excel.
 
 ## Contribution
