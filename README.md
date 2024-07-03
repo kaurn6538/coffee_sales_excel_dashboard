@@ -9,7 +9,7 @@ This Excel dashboard provides a comprehensive analysis of coffee sales data, fea
   *    Timeline Filter: Allows filtering of data by specific time periods.
   *    Roast Type Filter: Filters data based on the type of coffee roast (Medium, Light, Dark).
   *    Loyalty Card Filter: Filters data based on whether customers have a loyalty card.
-  *    Size Filter:Filters data based on size.
+  *    Size Filter : Filters data based on size.
 
 ## Data Preparation
 Orders Sheet
@@ -45,7 +45,7 @@ Unit Price: Using the formula:
 
 ## How to Use
 1. Open the Excel file.
-2. Use the filters to explore the data based on different criteria such as timeline, roast type, and loyalty card.
+2. Use the filters to explore the data based on different criteria such as timeline, roast type, size and loyalty card.
 3. Review the charts to gain insights into sales performance across various dimensions.
 
 ## Installation
