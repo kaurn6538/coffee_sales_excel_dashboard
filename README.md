@@ -18,9 +18,23 @@ Coffee Name: Derived using the formula:
 Roast Type Name: Derived using the formula:
   *     =IF(J2="M","Medium",IF(J2="L","Light",IF(J2="D","Dark","")))
 
-Customer Sheet
 Loyalty Card: Created using the formula:
   *     =XLOOKUP([@[Customer ID]],customers!$A$1:$A$1001,customers!$I$1:$I$1001,,0)
+
+Country :Derived using the formula:
+ *     =XLOOKUP(C2,customers!$A$1:$A$1001,customers!$G$1:$G$1001,,0)
+
+Coffee Type: Derived using the formula:
+  *     =INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!I$1,products!$A$1:$G$1,0))
+
+Roast Tpye: using the formna:
+ *     =INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!J$1,products!$A$1:$G$1,0))
+
+Size: Derived Using the formula:
+ *     =INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!K$1,products!$A$1:$G$1,0))
+
+Unit Price: Using the formula:
+ *     =INDEX(products!$A$1:$G$49,MATCH(orders!$D2,products!$A$1:$A$49,0),MATCH(orders!K$1,products!$A$1:$G$1,0))
 
 ## Charts and Pivot Tables
 1. Bar Chart by Country: Created using a pivot table to display the sales distribution by country.
